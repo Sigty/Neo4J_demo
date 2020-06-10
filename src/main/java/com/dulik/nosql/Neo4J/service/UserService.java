@@ -30,8 +30,8 @@ public class UserService {
                 .collect(Collectors.toList());
     }
 
-    public Optional<User> getUserById(Long idGuitar) {
-        return userRepository.findById(idGuitar);
+    public Optional<User> getUserById(Long idUser) {
+        return userRepository.findById(idUser);
     }
 
     public void deleteGuitar(Long idGuitar) {

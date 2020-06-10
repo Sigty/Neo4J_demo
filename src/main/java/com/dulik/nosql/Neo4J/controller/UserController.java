@@ -38,7 +38,7 @@ public class UserController {
     }
 
     @GetMapping("/get")
-    public ResponseEntity<User> getUser(@RequestParam(value = "id", required = false) Long idUser) {
+    public ResponseEntity<User> getUser(@RequestParam(value = "id") Long idUser) {
         return ResponseEntity.ok().body(userService.getUserById(idUser).orElse(null));
 
     }

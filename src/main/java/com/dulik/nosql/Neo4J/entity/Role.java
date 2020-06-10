@@ -15,10 +15,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@ToString(of = {"id", "user", "project"})
+@ToString(of = {"id", "roles", "user", "project"})
 @AllArgsConstructor
 @NoArgsConstructor
-@RelationshipEntity(type = "MANUFACTURE")
+@RelationshipEntity(type = "ROLE")
 public class Role {
 
     @Id
